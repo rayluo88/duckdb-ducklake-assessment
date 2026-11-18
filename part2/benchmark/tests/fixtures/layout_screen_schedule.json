@@ -1,0 +1,7 @@
+{
+  "fixture_version": 1,
+  "blocks": 19,
+  "primary_query_ids": ["Q1", "Q2a", "Q2b", "Q2c", "Q3", "Q4", "Q5", "Q6"],
+  "query_order_seed": "20260809 + block",
+  "lane_order_seed": "sha256(f'{campaign_seed}|{variant_id}|{block}|{query_id}|lane_order')[:8]"
+}

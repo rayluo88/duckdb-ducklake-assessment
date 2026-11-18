@@ -1,0 +1,23 @@
+[project]
+name = "ducklake-benchmark"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "duckdb>=1.5.5",
+]
+
+[project.scripts]
+ducklake-benchmark = "ducklake_benchmark.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.8.17,<0.9.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
