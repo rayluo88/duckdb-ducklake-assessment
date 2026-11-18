@@ -1,6 +1,6 @@
 # DuckDB and DuckLake: Synthetic Data Assessment
 
-An anonymised research release containing functional examples, benchmark code and reports for
+Research materials containing functional examples, benchmark code and reports for
 DuckDB, Parquet and DuckLake. Data used for the assessment was synthetic.
 
 | Part | Contents | Status |
@@ -26,13 +26,11 @@ uv run --locked --no-editable pytest -q
 Part 1 also provides `uv run --locked --no-editable python local-smoke-test.py`. It uses synthetic
 data and may download a DuckLake extension. See [Part 1 setup](part1/poc/) for details.
 
-## Anonymisation and reproducibility
+## Reproducibility
 
-Personal names, workplace-specific identifiers and historical cloud account, project and bucket
-identifiers have been removed or replaced with placeholders. These substitutions include historic
-cloud guardrail constants and test fixtures; the published cloud scripts are **not deployable**
-without independent review and configuration. Historical reports have been anonymised without
-changing their numerical findings. Raw run artifacts, generated datasets and the original
+Cloud account, project and bucket values in guardrail constants and test fixtures are placeholders;
+the published cloud scripts are **not deployable** without independent review and configuration.
+Raw run artifacts, generated datasets and the original
 hash-chain register are not included, so this release alone cannot independently verify every
 historical evidence hash. Python dependency locks preserve the historical dependency versions;
 DuckDB extensions are installed separately and their exact builds are not guaranteed by the locks.
